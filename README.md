@@ -25,7 +25,7 @@ If you just want to run it once:
 
 ```
 wt create https://raw.githubusercontent.com/sandrinodimattia/auth0-auth-api-hooks-webtask/master/task.js \
-    --name auth0-api-hooks \
+    --name auth0-auth-api-hooks \
     --secret AUTH0_DOMAIN="YOUR_AUTH0_DOMAIN" \
     --secret AUTH0_GLOBAL_CLIENT_ID="YOUR_AUTH0_GLOBAL_CLIENT_ID" \
     --secret AUTH0_GLOBAL_CLIENT_SECRET="YOUR_AUTH0_GLOBAL_CLIENT_SECRET" \
@@ -39,7 +39,7 @@ If you want to run it on a schedule (run every 5 minutes for example):
 
 ```
 wt cron schedule \
-    --name auth0-api-hooks \
+    --name auth0-auth-api-hooks \
     --secret AUTH0_DOMAIN="YOUR_AUTH0_DOMAIN" \
     --secret AUTH0_GLOBAL_CLIENT_ID="YOUR_AUTH0_GLOBAL_CLIENT_ID" \
     --secret AUTH0_GLOBAL_CLIENT_SECRET="YOUR_AUTH0_GLOBAL_CLIENT_SECRET" \
@@ -161,6 +161,4 @@ Here's an example of the payload that will be sent:
 
 ## Troubleshooting
 
-To troubleshoot you can use the `wt logs` command to see the output of your Webtask in real time:
-
-![](media/webtask-troubleshooting.png)
+To troubleshoot you can use the `wt logs` command to see the output of your Webtask in real time.
